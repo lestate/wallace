@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<ui:composition template="modelocliente.xhtml">
+	<ui:define name="conteudo">
+		<f:view>
+			<h:form>
+				<table>
+					<tr>
+						<td><h:outputText value="#{message.empCod}" /></td>
+						<td><h:inputText value="#{empresaManagedBean.empCod}" /></td>
+					</tr>
+				</table>
+				<p>
+					<h:commandButton value="Consultar"
+						action="#{empresaManagedBean.buscarPorEmpCod}" />
+				</p>
+			</h:form>
+			<h:form>
+				<table>
+					<tr>
+						<td><h:outputText value="#{message.empNom}" /></td>
+						<td><h:inputText value="#{empresaManagedBean.empNom}" /></td>
+					</tr>
+				</table>
+				<p>
+					<h:commandButton value="Consultar"
+						action="#{empresaManagedBean.buscarPorEmpNom}" />
+				</p>
+			</h:form>
+		</f:view>
+	</ui:define>
+</ui:composition>
+</html>

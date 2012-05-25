@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<h:outputStylesheet name="bootstrap.css" library="bootstrap/css"></h:outputStylesheet>
+	<h:outputStylesheet name="avabase.css" library="css"></h:outputStylesheet>
+	<h:outputStylesheet name="bootstrap-responsive.css"
+		library="bootstrap/css"></h:outputStylesheet>
+	<h:outputScript name="html5.js" library="js"></h:outputScript>
+	<title>Avalanche Base - Wallace</title>
+</h:head>
+<h:body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<ui:insert name="cabecalho">Cabeçalho</ui:insert>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<ui:insert name="menu">Menu</ui:insert>
+			</div>
+			<div class="span10">
+				<div class="well sidebar-nav">
+					<ui:insert name="conteudo">Conteudo</ui:insert>
+				</div>
+			</div>
+		</div>
+		<hr></hr>
+		<footer>
+			<ui:insert name="rodape">Rodapé</ui:insert>
+		</footer>
+	</div>
+	<h:outputScript name="jquery.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-transition.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-alert.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-modal.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-dropdown.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-scrollspy.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-tab.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-tooltip.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-popover.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-button.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-collapse.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-carousel.js" library="assets/js"></h:outputScript>
+	<h:outputScript name="bootstrap-typeahead.js" library="assets/js"></h:outputScript>
+</h:body>
+</html>

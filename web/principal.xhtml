@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<f:view contentType="text/html" />
+<h:head>
+	<meta http-equiv="Content-Type"
+		content="application/xhtml+xml; charset=UTF-8" />
+	<h:outputStylesheet name="bootstrap.css" library="bootstrap/css"></h:outputStylesheet>
+	<h:outputStylesheet name="avabase.css" library="css"></h:outputStylesheet>
+	<h:outputStylesheet name="bootstrap-responsive.css"
+		library="bootstrap/css"></h:outputStylesheet>
+	<!--[if lt IE 9]>
+	<h:outputScript name="html5.js" library="js"></h:outputScript>
+	<![endif]-->
+	<title>Avalanche Base - Wallace</title>
+</h:head>
+<h:body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a> <a class="brand" href="#">Wallace</a>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span2">
+				<h:form class="well">
+					<label><h:outputLabel value="#{message.usuCod}"
+							for="usuCod" /></label>
+					<h:inputText id="usuCod" value="#{entrarManagedBean.usuCod}"
+						class="span10" />
+					<label><h:outputLabel value="#{message.usuSen}"
+							for="usuSen" /></label>
+					<h:inputSecret id="usuSen" value="#{entrarManagedBean.usuSen}"
+						class="span10" />
+					<h:commandButton action="#{entrarManagedBean.efetuaLogin}"
+						value="#{message.singIn}" class="btn" />
+				</h:form>
+			</div>
+			<div class="span10">
+				<div class="well sidebar-nav">
+					<br></br> <br></br> <br></br> <br></br> <br></br>
+					<br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+					<br></br> <br></br> <br></br> <br></br> <br></br> <br></br> <br></br>
+					<br></br> <br></br> <br></br> <br></br>
+				</div>
+			</div>
+		</div>
+		<hr></hr>
+		<footer>
+			<p>&#169; 2012 Avalanche Base</p>
+		</footer>
+	</div>
+</h:body>
+</html>

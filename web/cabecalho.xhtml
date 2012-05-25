@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<body>
+	<ui:composition>
+		<h:form>
+			<a class="brand" href="#">Wallace</a>
+			<div class="nav-collapse pull-right">
+				<ul class="nav">
+					<li><h:commandLink action="#{sairManagedBean.efetuaLogout}"
+							value="#{message.singOut}" /></li>
+				</ul>
+			</div>
+		</h:form>
+	</ui:composition>
+</body>
+</html>
