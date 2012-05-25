@@ -10,6 +10,6 @@ public class SairManagedBean {
 
 	public String efetuaLogout() {
 		FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
-		return "entrar?faces-redirect=true";
+		return "principal?faces-redirect=true";
 	}
 }
